@@ -94,12 +94,14 @@ int main(void)
                 }
                 if(mousePos.x >= 50 && mousePos.x <= 250 && mousePos.y >= 175 && mousePos.y <= 225){
                     DarkMode = !DarkMode;
+                    PlaySound(BtnPress);
                 }
                 if(mousePos.x >= 50 && mousePos.x <= 250 && mousePos.y >= 250 && mousePos.y <= 300){
                     Scene = 3;
                     PlaySound(BtnPress);
                 }
                 if(mousePos.x >= 50 && mousePos.x <= 250 && mousePos.y >= 325 && mousePos.y <= 375){
+                    PlaySound(BtnPress);
                     CloseWindow();
                 }
             }
@@ -112,21 +114,21 @@ int main(void)
                 if(!GameOver){
                     if(turn == 1) 
                     {
-                        DrawText("X Turn", 70, 5, 50, BLACK); 
+                        DrawText("x turn", 70, 5, 50, BLACK); 
                     }
                     if(turn == 2) 
                     {
-                        DrawText("0 Turn", 70, 5, 50, BLACK); 
+                        DrawText("0 turn", 70, 5, 50, BLACK); 
                     }
                 }
                 else{
                     if(Winner == 1)
                     {
-                        DrawText("X Wins", 70, 5, 50, BLACK); 
+                        DrawText("x wins", 70, 5, 50, BLACK); 
                     }
                     if(Winner == 2)
                     {
-                        DrawText("0 Wins", 70, 5, 50, BLACK); 
+                        DrawText("0 wins", 70, 5, 50, BLACK); 
                     }
                     if(Winner == 3)
                     {
@@ -147,21 +149,21 @@ int main(void)
                 if(!GameOver){
                     if(turn == 1) 
                     {
-                        DrawText("X Turn", 70, 5, 50, WHITE); 
+                        DrawText("x turn", 70, 5, 50, WHITE); 
                     }
                     if(turn == 2) 
                     {
-                        DrawText("0 Turn", 70, 5, 50, WHITE); 
+                        DrawText("0 turn", 70, 5, 50, WHITE); 
                     }
                 }
                 else{
                     if(Winner == 1)
                     {
-                        DrawText("X Wins", 70, 5, 50, WHITE); 
+                        DrawText("x wins", 70, 5, 50, WHITE); 
                     }
                     if(Winner == 2)
                     {
-                        DrawText("0 Wins", 70, 5, 50, WHITE); 
+                        DrawText("0 wins", 70, 5, 50, WHITE); 
                     }
                     if(Winner == 3)
                     {
@@ -458,7 +460,7 @@ int main(void)
                 
                 DrawText("CREDITS", 58, 5, 40, GRAY);
                 DrawText("Daradici András - Coding", 30, 55, 20, GRAY);
-                DrawText("raylib -Graphics Library", 30, 85, 20, GRAY);
+                DrawText("raylib - Graphics Library", 30, 85, 20, GRAY);
                 DrawText("raylib.com", 110, 115, 20, SKYBLUE);
                 DrawText("You - Playing the game <3", 30, 145, 20, GRAY);
             }
@@ -468,7 +470,7 @@ int main(void)
                 DrawText("BACK", 113, 337, 30, WHITE);
                 DrawText("CREDITS", 58, 5, 40, GRAY);
                 DrawText("Daradici András - Coding", 30, 55, 20, GRAY);
-                DrawText("raylib -Graphics Library", 30, 85, 20, GRAY);
+                DrawText("raylib - Graphics Library", 30, 85, 20, GRAY);
                 DrawText("raylib.com", 110, 115, 20, SKYBLUE);
                 DrawText("You - Playing the game <3", 30, 145, 20, GRAY);
             }
